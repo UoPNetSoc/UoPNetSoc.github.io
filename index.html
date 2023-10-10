@@ -67,7 +67,7 @@
 		}
 
 		footer {
-			max-width: 50em;
+			width: 100vw;
 			
 			position: fixed;
 			bottom: 0;
@@ -100,6 +100,20 @@
 			transition: transform 5s ease-in-out;
 		}
 
+		/* jack hue shift */
+		footer aside figure img#jack:hover {
+			animation: hue 5s linear infinite;
+		}
+
+		@keyframes hue {
+			0% {
+				filter: hue-rotate(0deg);
+			}
+			100% {
+				filter: hue-rotate(360deg);
+			}
+		}
+
 		/* mobile */
 		@media screen and (max-width: 50em) {
 			footer {
@@ -129,12 +143,23 @@
 	</style>
 
 	<!-- we love social media -->
+	<meta property="og:title" content="UoP Computer Networking Society">
+	<meta property="og:description" content="A society of the University of Portsmouth Students' Union">
 	<meta property="og:image" content="https://netsoc.group/img/cables.jpg">
-	<meta name="twitter:image" content=" https://netsoc.group/img/cables.jpg">
+	<meta property="og:url" content="https://netsoc.group">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="UoP Computer Networking Society">
+	<meta property="og:locale" content="en_GB">
 	<meta name="twitter:card" content="summary_large_image">
+	<!-- <meta name="twitter:site" content="@TODO"> -->
+	<meta name="twitter:title" content="UoP Computer Networking Society">
+	<meta name="twitter:description" content="A society of the University of Portsmouth Students' Union">
+	<meta name="twitter:image" content="https://netsoc.group/img/cables.jpg">
+	<meta name="twitter:image:alt" content="A picture of a bunch of cables">
+	<meta name="twitter:creator" content="@itsmeimtom">
 
 	<!-- favicon -->
-	<link rel="shortcut icon" href="img/shik.png" type="image/png">
+	<link rel="shortcut icon" href="img/squarejack.jpg" type="image/png">
 </head>
 <body>
 	<header>
@@ -166,6 +191,12 @@
 			<figure>
 				<img style="filter: invert(1);" src="img/upsu-cooler.png" alt="University of Portsmouth Student' Union Logo" aria-hidden="true">
 				<figcaption>A society of the University of Portsmouth Students'&nbsp;Union</figcaption>
+			</figure>
+		</aside>
+		<aside>
+			<figure>
+				<img id="jack" src="img/squarejack.jpg" alt="A photograph of Jack Connolly" aria-hidden="true" title="Lightning Shirt. Shirt with Lightning.">
+				<figcaption>Our&nbsp;president, Jack&nbsp;Connolly</figcaption>
 			</figure>
 		</aside>
 	</footer>
