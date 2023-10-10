@@ -58,6 +58,51 @@
 			color: #5c0f5f;
 			border-bottom-color: #5c0f5f;
 		}
+
+		footer {
+			max-width: 50em;
+			
+			position: fixed;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+
+			display: flex;
+			justify-content: space-evenly;
+			align-items: baseline;
+		}
+
+		footer aside {
+			text-align: left;
+		}
+
+		footer aside figure {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		footer aside figure img {
+			height: 3em;
+			margin-right: 2em;
+		}
+
+		/* shikun stretch */
+		footer aside figure img#shik:hover {
+			transform: scaleX(5) scaleY(2);
+			transition: transform 5s ease-in-out;
+		}
+
+		/* mobile */
+		@media screen and (max-width: 50em) {
+			footer {
+				flex-direction: column;
+			}
+
+			footer aside {
+				margin-bottom: 2em;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -82,14 +127,14 @@
 	<footer>
 		<aside>
 			<figure>
-				<img src="img/shik.png" alt="A picture of Dr Shikun Zhou" aria-hidden="true">
+				<img id="shik" src="img/shik.png" alt="A picture of Dr Shikun Zhou" aria-hidden="true">
 				<figcaption>Endorsed by Dr Shikun</figcaption>
 			</figure>
 		</aside>
 		<aside>
 			<figure>
 				<img style="filter: invert(1);" src="img/upsu-cooler.png" alt="University of Portsmouth Student' Union Logo" aria-hidden="true">
-				<figure>A society of the University of Portsmouth Students' Union</figure>
+				<figcaption>A society of the University of Portsmouth Students' Union</figcaption>
 			</figure>
 		</aside>
 	</footer>
