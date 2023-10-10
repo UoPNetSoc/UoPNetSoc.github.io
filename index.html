@@ -12,11 +12,14 @@
 
 	<style>
 		body {
-			font-family: Gabarito, Helvetica, Arial, sans-serif;
 			margin: 0;
 			padding: 0;
+			min-height: calc(100vh - 2.5vh);
+			font-family: Gabarito, Helvetica, Arial, sans-serif;
 			text-align: center;
 			background-color: pink;
+			background: linear-gradient(180deg, rgba(255,192,203,1) 0%, rgba(255,192,203,1) 60%, rgba(255,255,255,1) 100%); 
+			border-top: 2.5vh solid #b6004c;
 		}
 
 		h1 {
@@ -27,6 +30,10 @@
 			font-size: 0.5em;
 			font-weight: 400;
 			display: block;
+		}
+
+		header, main {
+			padding: 1em;
 		}
 
 		main {
@@ -96,11 +103,27 @@
 		/* mobile */
 		@media screen and (max-width: 50em) {
 			footer {
-				flex-direction: column;
+				display: block;
 			}
 
 			footer aside {
 				margin-bottom: 2em;
+			}
+
+			footer aside figure {
+				display: block;
+				text-align: center;
+			}
+
+			footer aside figure img {
+				margin: 0;
+			}
+		}
+
+		@media screen and (max-width: 50em) and (max-height: 900px) {
+			footer {
+				position: static;
+				transform: none;
 			}
 		}
 	</style>
