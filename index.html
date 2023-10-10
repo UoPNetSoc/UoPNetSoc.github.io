@@ -22,6 +22,26 @@
 			border-top: 2.5vh solid #b6004c;
 		}
 
+		aside#bg {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			z-index: -1;
+
+			background-image: url("img/lab.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			/* scale hides the blur around the edges,
+			rotate fixes the dodgy photography */
+			transform: scale(1.3) rotate(-2deg);
+			filter: blur(8px);
+			opacity: 0.2;
+		}
+
 		h1 {
 			font-size: 3em;
 		}
@@ -162,6 +182,8 @@
 	<link rel="shortcut icon" href="img/squarejack.jpg" type="image/png">
 </head>
 <body>
+	<aside id="bg" aria-hidden="true"></aside>
+
 	<header>
 		<h1>
 			<span class="title-top">University of Portsmouth</span>
