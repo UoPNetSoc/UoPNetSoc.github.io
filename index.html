@@ -89,6 +89,20 @@
 			border-bottom-color: #5c0f5f;
 		}
 
+		/* !important isn't needed but this is !important */
+		a.hidden {
+			color: inherit !important;
+			text-decoration: none !important;
+			border-bottom: none !important;
+		}
+
+		a.hidden:hover {
+			color: inherit !important;
+			text-decoration: underline !important;
+			border-botom: none !important;
+		}
+			
+
 		footer {
 			width: 100vw;
 			
@@ -216,7 +230,7 @@
 		<aside>
 			<figure>
 				<img id="shik" src="img/shik.png" alt="A picture of Dr Shikun Zhou" aria-hidden="true" title="Why you stretch my face?">
-				<figcaption>Endorsed by <a href="https://shikunti.me">Dr&nbsp;Shikun</a></figcaption>
+				<figcaption>Endorsed by <a href="https://shikunti.me" class="hidden">Dr&nbsp;Shikun</a></figcaption>
 			</figure>
 		</aside>
 		<aside>
@@ -228,7 +242,7 @@
 		<aside>
 			<figure>
 				<img id="jack" src="img/squarejack.jpg" alt="A photograph of Jack Connolly" aria-hidden="true" title="Lightning Shirt. Shirt with Lightning.">
-				<figcaption>Our&nbsp;president, Jack&nbsp;Connolly</figcaption>
+				<figcaption>Our&nbsp;president, <a href="https://jackconnolly.net/" class="hidden">Jack&nbsp;Connolly</a></figcaption>
 			</figure>
 		</aside>
 	</footer>
