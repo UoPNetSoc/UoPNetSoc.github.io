@@ -171,8 +171,10 @@ function addHash() {
 
 	if (step == (oneLineMax * 2) - 10) {
 		// stop after two lines
-		document.getElementById("js-loader").innerHTML += ` [OK]`;
-		window.location = "https://shikunti.me";
+		document.getElementById("js-loader").innerHTML += ` [OK]<br><br>System will now restart...`;
+		window.setTimeout(() => {
+			window.location = "https://shikunti.me";
+		}, 500);
 	} else {
 		// random time between 25ms and 250ms
 		const ms = Math.floor(Math.random() * 225) + 25;
