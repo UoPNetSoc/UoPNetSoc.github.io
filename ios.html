@@ -82,7 +82,7 @@ To join, visit the UPSU website at:
 
 <span class="prompt" aria-hidden="true">NetSoc> show social</span>
 Discord is up
-	Address is <a href="https://discord.gg/AyTcSbwQ5E" class="js-discord-invite">discord.gg/AyTcSbwQ5E</a> (b.i.a <span class="js-discord-id">1093673080221605921</span>)
+	Address is <a href="https://discord.gg/AyTcSbwQ5E" class="js-discord-invite">discord.gg/AyTcSbwQ5E</a> (b.i.a <span class="js-discord-id">1093673080221605921</span>)	
 	Online count is <span class="js-discord-online">?</span>
 Instagram is up
 	Address is <a href="https://instagram.com/uopnetsoc">instagram.com/UoPNetSoc</a>
@@ -132,8 +132,8 @@ function addHash() {
 	if (step % willFitInWindow == 0 && step != 0) document.getElementById("js-loader").innerHTML += "<br>";
 
 	// random time between 1 and 2 seconds
-	// const ms = Math.floor(Math.random() * 1000) + 1000;
-	window.setTimeout(addHash, 100);
+	const ms = Math.floor(Math.random() * 1000) + 1000;
+	window.setTimeout(addHash, ms);
 
 	step++;
 }
