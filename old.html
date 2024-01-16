@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UoP Computer Networking Society</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;900&display=swap" rel="stylesheet">
+
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			min-height: calc(100vh - 2.5vh);
+			font-family: Gabarito, Helvetica, Arial, sans-serif;
+			text-align: center;
+			background-color: pink;
+			background: linear-gradient(180deg, rgba(255,192,203,1) 0%, rgba(255,192,203,1) 60%, rgba(255,255,255,1) 100%); 
+			border-top: 2.5vh solid #b6004c;
+		}
+
+		aside#bg {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			z-index: -1;
+
+			background-image: url("img/JCphoto-netsoc-2298.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			/* scale hides the blur around the edges */
+			transform: scale(1.3);
+			filter: blur(8px);
+			opacity: 0.2;
+		}
+
+		h1 {
+			font-size: 3em;
+		}
+
+		h1 span.title-top {
+			font-size: 0.5em;
+			font-weight: 400;
+			display: block;
+		}
+
+		header, main {
+			padding: 1em;
+		}
+
+		main {
+			max-width: 30em;
+			margin: 0 auto;
+		}
+
+		ul, li {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			padding: 1em;
+			font-size: 1.5em;
+		}
+
+		li.lesser {
+			font-size: 1em;
+		}
+
+		a {
+			color: #b6004c;
+			text-decoration: none;
+			border-bottom: 2px solid #b6004c
+		}
+
+		a:hover, a:focus {
+			color: #5c0f5f;
+			border-bottom-color: #5c0f5f;
+		}
+
+		/* !important isn't needed but this is !important */
+		a.hidden {
+			color: inherit !important;
+			text-decoration: none !important;
+			border-bottom: none !important;
+		}
+
+		a.hidden:hover {
+			color: inherit !important;
+			text-decoration: underline !important;
+			border-bottom: none !important;
+		}
+			
+
+		footer {
+			width: 100vw;
+			
+			position: fixed;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+
+			display: flex;
+			justify-content: space-evenly;
+			align-items: baseline;
+		}
+
+		footer aside {
+			text-align: left;
+		}
+
+		footer aside figure {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		footer aside figure img {
+			height: 3em;
+			margin-right: 2em;
+		}
+
+		/* shikun stretch */
+		footer aside figure img#shik:hover {
+			transform: scaleX(5) scaleY(2);
+			transition: transform 5s ease-in-out;
+		}
+
+		/* jack hue shift */
+		footer aside figure img#jack:hover {
+			animation: hue 5s linear infinite;
+		}
+
+		@keyframes hue {
+			0% {
+				filter: hue-rotate(0deg);
+			}
+			100% {
+				filter: hue-rotate(360deg);
+			}
+		}
+
+		/* mobile */
+		@media screen and (max-width: 50em) {
+			footer {
+				display: block;
+			}
+
+			footer aside {
+				margin-bottom: 2em;
+			}
+
+			footer aside figure {
+				display: block;
+				text-align: center;
+			}
+
+			footer aside figure img {
+				margin: 0;
+			}
+		}
+
+		@media screen and (max-width: 50em) and (max-height: 900px) {
+			footer {
+				position: static;
+				transform: none;
+			}
+		}
+	</style>
+
+	<!-- we love social media -->
+	<meta property="og:title" content="UoP Computer Networking Society">
+	<meta property="og:description" content="A society of the University of Portsmouth Students' Union">
+	<meta property="description" content="A society of the University of Portsmouth Students' Union">
+	<meta property="og:image" content="https://netsoc.group/img/JCphoto-netsoc-2298.jpg">
+	<meta property="og:url" content="https://netsoc.group">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="UoP Computer Networking Society">
+	<meta property="og:locale" content="en_GB">
+	<meta name="twitter:card" content="summary_large_image">
+	<!-- <meta name="twitter:site" content="@TODO"> -->
+	<meta name="twitter:title" content="UoP Computer Networking Society">
+	<meta name="twitter:description" content="A society of the University of Portsmouth Students' Union">
+	<meta name="twitter:image" content="https://netsoc.group/img/JCphoto-netsoc-2298.jpg">
+	<meta name="twitter:image:alt" content="A picture of a bunch of cables">
+	<meta name="twitter:creator" content="@itsmeimtom">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/squarejack.jpg" type="image/png">
+</head>
+<body>
+	<aside id="bg" aria-hidden="true"></aside>
+
+	<header>
+		<h1>
+			<span class="title-top">University of Portsmouth</span>
+			<span class="title-bottom">Computer Networking Society</span>
+		</h1>
+	</header>
+
+	<main>
+		<ul>
+			<li>
+				Become a member at <a href="https://upsu.net/groups/8DC3Q/computer-networking-society">the&nbsp;Union</a>
+			</li>
+			<li>
+				Join our community on <a href="https://discord.gg/AyTcSbwQ5E">Discord</a>
+			</li>
+			<li>
+				Follow our Instagram <a href="https://instagram.com/uopnetsoc">@uopnetsoc</a>
+			</li>
+			<li class="lesser">
+				We also have projects <a href="https://github.com/uopnetsoc">on GitHub</a>:
+			</li>
+			<li class="lesser" style="margin-top: -0.5em; padding-top: 0;">
+				<a href="/is-a2.net-free">Is&nbsp;A2.NET&nbsp;free?</a> &bull; <a href="https://github.com/UoPNetSoc/lecturer-bg">Lecturer&nbsp;Background</a>
+			</li>
+		</ul>
+	</main>
+
+	<footer>
+		<aside>
+			<figure>
+				<img id="shik" src="img/shik.png" alt="A picture of Dr Shikun Zhou" aria-hidden="true" title="Why you stretch my face?">
+				<figcaption>Endorsed by <a href="https://shikunti.me" class="hidden">Dr&nbsp;Shikun</a></figcaption>
+			</figure>
+		</aside>
+		<aside>
+			<figure>
+				<img style="filter: invert(1);" src="img/upsu-cooler.png" alt="University of Portsmouth Student' Union Logo" aria-hidden="true">
+				<figcaption>A society of the University of Portsmouth Students'&nbsp;Union</figcaption>
+			</figure>
+		</aside>
+		<aside>
+			<figure>
+				<img id="jack" src="img/squarejack.jpg" alt="A photograph of Jack Connolly" aria-hidden="true" title="Lightning Shirt. Shirt with Lightning.">
+				<figcaption>Our&nbsp;president, <a href="https://jackconnolly.net/" class="hidden">Jack&nbsp;Connolly</a></figcaption>
+			</figure>
+		</aside>
+	</footer>
+</body>
+</html>
