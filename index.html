@@ -24,12 +24,18 @@
 			color: #fff;
 			max-width: 50em;
 			margin: 0 auto;
-			padding: 1em;
+			/* padding: 1em; */
 			font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
+		}
+
+		header {
+			margin-top: 2.5vh;
 		}
 
 		header, main {
 			white-space: pre-wrap;
+			background-color: #0003;
+			padding: 1em;
 		}
 
 		span.prompt, span.lesser {
@@ -54,15 +60,15 @@
 			height: 100vh;
 			z-index: -1;
 
-			background-image: url("img/JCphoto-netsoc-2298.jpg");
+			background-image: url("img/lab.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: top center;
 
 			/* scale hides the blur around the edges */
-			transform: scale(1.3);
-			filter: blur(8px);
-			opacity: 0.2;
+			transform: scale(1.3) rotate(1deg);
+			filter: blur(6px);
+			opacity: 0.4;
 		}
 
 		a#load-button {
@@ -90,7 +96,7 @@
 
 
 <header>
-<span class="prompt" aria-hidden="true">NetSoc>show version</span>
+<span class="prompt" aria-hidden="true">NetSoc> show version</span>
 <strong>University of Portsmouth Computer Networking Society</strong>
 <span aria-hidden="true">sha <span class="js-sha"></span>
 updated <span class="js-date"></span> by <span class="js-author"></span>
