@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>UoP Computer Networking Society</title>
+	<title>UoP Computer Networking Society (2023–2025)</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,30 +26,28 @@
 			margin: 0 auto;
 			/* padding: 1em; */
 			font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
+			overflow-x: hidden;
 		}
 
-		header {
-			margin-top: 2.5vh;
-		}
-
-		header, main {
+		main {
 			white-space: pre-wrap;
-			background-color: #0003;
+			overflow-wrap: break-word;
+			background-color: #0006;
 			padding: 1em;
 		}
 
-		span.prompt, span.lesser {
-			color: #aaa;		
-		}
-		
-		a {
-			font-weight: bold;
-			text-decoration: underline;
-			color: inherit;
+		.line.hidden {
+		    opacity: 0;
 		}
 
-		a:hover {
-			text-decoration: none;
+		@media prefers-reduced-motion {
+            .line.hidden {
+                opacity: 1;
+            }
+        }
+
+		a {
+            color: inherit;
 		}
 
 		aside#background {
@@ -67,189 +65,72 @@
 
 			/* scale hides the blur around the edges */
 			transform: scale(1.3) rotate(1deg);
-			filter: blur(6px);
-			opacity: 0.4;
-		}
-
-		a#load-button {
-			display: none;
-			vertical-align: text-top;
-			text-decoration: none;
-			font-size: 2em;
-			color: limegreen;
-			background-color: #444;
-			padding: 0 .5em;
-			border-radius: .1em;
-			border: 1px solid green;
-		}
-
-		/* show the button on touchscreen devices */
-		@media (hover: none), (-moz-touch-enabled: 1), (pointer:coarse) {
-			a#load-button {
-				display: inline-block;
-			}
+			filter: blur(6px) saturate(0.5);
+			opacity: 0.2;
 		}
 	</style>
 </head>
 <body>
 <aside id="background"></aside>
 
-
-<header>
-<span class="prompt" aria-hidden="true">NetSoc> show version</span>
-<strong>University of Portsmouth Computer Networking Society</strong>
-<span aria-hidden="true">sha <span class="js-sha"></span>
-updated <span class="js-date"></span> by <span class="js-author"></span>
-(c) <span class="js-year">1970</span></span>
-</header>
-	
 <main>
-<span class="prompt" aria-hidden="true">NetSoc> show info</span>
-We're a bit work-in-progress at the moment, but you can expect:
-- “Drop-In” sessions where you can discuss and get help with networking topics; both for Uni work, and for any non-Uni endeavours
-- Networking-related activities, socials, and workshops
-- Ad-hoc discussions and insight from people in the industry
-- Occasional LAN game sessions, but we must build the LAN first
+<span class="line" aria-hidden="true">Initializing Hardware ...</span>
 
-For those not doing a Networking or Cyber Security course, we can offer lovely tours of the networking lab, allowing you to explore the fun equipment (well, at least we think it's fun). It is some of the coolest stuff in the Uni :)
+<span class="line" aria-hidden="true">System integrity status: 0x0000002A</span>
+<span class="line" aria-hidden="true">Rom image verified successfully</span>
 
-<span class="prompt" aria-hidden="true">NetSoc> show join</span>
-To join, visit the UPSU website at:
-	<a href="https://upsu.net/groups/8DC3Q/computer-networking-society">upsu.net/groups/8DC3Q/computer-networking-society</a>
+<span class="line" aria-hidden="true">************************************************************</span>
+<span class="line" aria-hidden="true">*                                                          *</span>
+<span class="line"><span aria-hidden="true">*</span> University of Portsmouth                                 <span aria-hidden="true">*</span>
+<span class="line"><span aria-hidden="true">*</span> Computer Networking Society                              <span aria-hidden="true">*</span>
+<span class="line"><span aria-hidden="true">*</span> Copyright (c) 2023-2025                                  <span aria-hidden="true">*</span>
+<span class="line" aria-hidden="true">*                                                          *</span>
+<span class="line" aria-hidden="true">************************************************************</span>
 
-<span class="prompt" aria-hidden="true">NetSoc> show social</span>
-Chat, and find our latest information and events on Discord:
-	Address is <a href="https://discord.gg/AyTcSbwQ5E" class="js-discord-invite">discord.gg/AyTcSbwQ5E</a> (b.i.a <span class="js-discord-id">1093673080221605921</span>)	
-	Online count is <span class="js-discord-online">?</span>
-Enjoy high-quality photos of tech and networking equipment on Instagram:
-	Address is <a href="https://instagram.com/uopnetsoc">instagram.com/UoPNetSoc</a>
-We also have a LinkedIn, for some reason:
-	Address is <a href="https://linkedin.com/company/uopnetsoc">linkedin.com/company/UoPNetSoc</a>
+<span class="line" aria-hidden="true">Compiled Sat 7-Jun-25 [TMR]</span>
 
-<span class="prompt" aria-hidden="true">NetSoc> show projects brief</span>
-GitHub Organisation is up
-	Address is <a href="https://github.com/UoPNetSoc">github.com/UoPNetSoc</a>
-Is A2.NET free?
-	Address is <a href="https://netsoc.group/is-a2.net-free">netsoc.group/is-a2.net-free</a>
-Lecturer Background
-	Address is <a href="https://github.com/UoPNetSoc/lecturer-bg">github.com/UoPNetSoc/lecturer-bg</a>
+<span class="line">System       : Tower T10079MNB</span>
+<span class="line">Chassis      : Sera T10079MNB Mod MidBlue</span>
+<span class="line">Revision     : CPU 360d   BOARD 3000W   FPGA 502/3635</span>
+<span class="line">Memory       : 1.7 L</span>
+<span class="line">Date         : <span class="js-date"></span></span>
 
-<span class="prompt" aria-hidden="true">NetSoc> show committee</span>
-President Jack Connolly is up
-	Address is <a href="https://jackconnolly.net/">jackconnolly.net</a>
-Treasurer Harry Lowman is up
-	Address is <a href="https://harrylowman.github.io">harrylowman.github.io</a>
-Secretary Thomas 'Tom' Robinson is up
-	Address is <a href="https://thomasr.me">thomasr.me</a>
 
-<span class="prompt" aria-hidden="true">NetSoc> show endorsements</span>
-We are a part of the University of Portsmouth Students' Union
-We are endorsed and supported by Dr Shikun Zhou
+<span class="line" aria-hidden="true">Current image running: Boot ROM0</span>
 
-<span class="prompt" aria-hidden="true">NetSoc> en</span>
-<span class="prompt" aria-hidden="true">NetSoc# boot system tftp://shikun</span>
-<span class="prompt" aria-hidden="true">NetSoc# reload</span>
-This command will reset the whole system and disconnect your current session. Do you want to continue? (Y/N) <span id="js-confirm"></span><a href="javascript:checkKey(true)" id="load-button">Y</a>
+<span class="line" aria-hidden="true">Last reset cause: PowerOn</span>
+
+<span class="line" aria-hidden="true">boot: unsupported boot device "flash"</span>
+<span class="line">autoboot: boot failed, the society has closed</span>
+
+<span class="line"><a href="https://jackconnolly.net">Jack</a>, <a href="https://harrylowman.github.io/">Harry</a>, and <a href="https://thomasr.me/">Tom</a> thank you for your support</span>
 </main>
 
 <script>
-function checkKey(e) {
-	// if it's "y" or we press the button
-	if (e.keyCode == 89 || e === true) {
-		document.getElementById("js-confirm").innerHTML = "y";
-		document.getElementById("load-button").style.display = "none";
-		document.onkeyup = null;
+  // set the date
+  const date = new Date();
+  const dateElement = document.querySelector('.js-date');
+  const day = date.getDate();
+  const month = date.toLocaleString('en-GB', { month: 'short' });
+  const year = date.getFullYear();
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  dateElement.textContent = `${day}-${month}-${year} ${hours}:${minutes}`;
 
-		beginLoading();
-	}
-}
+  // animate in all the lines
+  const lines = document.querySelectorAll('.line');
+  lines.forEach(l => l.classList.add('hidden'));
 
-document.onkeyup = checkKey;
+  function showNextLine() {
+    const nextLine = document.querySelector('.line.hidden');
+    if(!nextLine) return;
 
-function beginLoading() {
-	document.querySelector("main").innerHTML += `
-SZ Boot Loader (c) 2023
-RELEASE SOFTWARE, VERSION 4.2(1)SZ
-Starting...
+    nextLine.classList.remove('hidden');
 
-Loading "tftp://shikun"...
-<span id="js-loader"></span>
-`;
+    setTimeout(showNextLine, Math.random() * 750 + 100);
+  }
 
-addHash();
-}
-	
-// decorative loading during fake loading
-let step = 1;
-
-const oneLineMax = Math.floor(document.querySelector("main").offsetWidth / getSizeOfHash());
-
-function addHash() {
-	document.getElementById("js-loader").innerHTML += "#";
-	
-	if(step % oneLineMax == 0 && step != 0) document.getElementById("js-loader").innerHTML += "<br>";
-
-	if (step == (oneLineMax * 2) - 10) {
-		// stop after two lines
-		document.getElementById("js-loader").innerHTML += ` [OK]<br><br>System will now restart...`;
-		window.setTimeout(() => {
-			window.location = "https://shikunti.me";
-		}, 500);
-	} else {
-		// random time between 25ms and 250ms
-		const ms = Math.floor(Math.random() * 225) + 25;
-		window.setTimeout(addHash, ms);
-
-		step++;
-	}
-}
-
-function getSizeOfHash() {
-	const span = document.createElement("span");
-	span.innerHTML = "#";
-	document.querySelector("main").appendChild(span);
-	const size = span.offsetWidth;
-	document.querySelector("main").removeChild(span);
-	return size;
-}
-</script>
-
-<script>
-// fill in information on the page from GitHub API
-function githubInfo(json) {
-	const meta = json.meta;
-	const data = json.data[0];
-
-	const sha = data.sha.slice(0, 7);
-	const date = new Date(data.commit.author.date).toISOString();
-	const verified = data.commit.verification.verified ? "verified" : "unverified";
-	const author = `${data.author.login} (${data.author.id})`;
-
-	document.querySelectorAll(".js-sha").forEach(e => e.innerHTML = sha);
-	document.querySelectorAll(".js-date").forEach(e => e.innerHTML = date);
-	document.querySelectorAll(".js-verified").forEach(e => e.innerHTML = verified);
-	document.querySelectorAll(".js-author").forEach(e => e.innerHTML = author);
-}
-
-document.querySelectorAll(".js-year").forEach(e => e.innerHTML = new Date().getFullYear());
-</script>
-<script src="https://api.github.com/repos/uopnetsoc/uopnetsoc.github.io/commits?per_page=1&callback=githubInfo"></script>
-
-<script>
-// fill in information on the page from Discord API
-
-async function getDiscordData() {
-	const discordWidget = `https://discord.com/api/guilds/1093673080221605921/widget.json`;
-	const data = await fetch(discordWidget).then(r => r.json());
-
-	document.querySelectorAll(".js-discord-online").forEach(e => e.innerHTML = data.presence_count);
-	document.querySelectorAll(".js-discord-total").forEach(e => e.innerHTML = data.members.length);
-	document.querySelectorAll(".js-discord-invite").forEach(e => e.innerHTML = data.instant_invite.replace("https://", ""));
-	document.querySelectorAll(".js-discord-invite").forEach(e => e.href = data.instant_invite);
-	document.querySelectorAll(".js-discord-id").forEach(e => e.innerHTML = data.id);
-}
-
-getDiscordData();
+  showNextLine();
 </script>
 </body>
 </html>
